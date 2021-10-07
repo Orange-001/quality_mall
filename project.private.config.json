@@ -41,6 +41,18 @@
           "pathName": "pages/user/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "商品收藏",
+          "pathName": "pages/collect/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "服饰页面",
+          "pathName": "/pages/goods_list",
+          "query": "query=服饰",
+          "scene": null
         }
       ]
     }

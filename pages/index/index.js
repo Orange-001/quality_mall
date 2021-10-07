@@ -30,6 +30,10 @@ Page({
   getSwiperList(){
     request({url:"/home/swiperdata"})
     .then(result=>{
+      result.forEach((val,idx,arr) => {
+        arr[idx].navigator_url = arr[idx].navigator_url.replace("main","index")
+      });
+      // console.log(result)
       this.setData({
         swiperList: result
       })
@@ -48,6 +52,11 @@ Page({
   getFloorList(){
     request({url:"/home/floordata"})
     .then(result=>{
+      result.forEach((val1,idx1,arr1)=>{
+        arr1[idx1].product_list.forEach((val,idx,arr) => {
+          arr[idx].navigator_url = arr[idx].navigator_url.replace("?","/index?")
+        });
+      })
       this.setData({
         floorList: result
       })

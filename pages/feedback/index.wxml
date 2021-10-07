@@ -1,2 +1,3 @@
-<!--pages/feedback/index.wxml-->
-<text>pages/feedback/index.wxml</text>
+<button plain open-type="feedback" >
+  意见反馈
+</button>
